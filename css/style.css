@@ -63,6 +63,10 @@ li{
     display: block;
 }
 
+.marg-top-30{
+    margin-top: 30px;
+}
+
 /* main */
 main{
     background-color: black;
@@ -170,15 +174,21 @@ main{
 }
 
 /* quarta sezione */
-.flex-calc{
+.flex-d{
     display: flex;
     flex-wrap: wrap;
+}
+
+.card {
     width: calc(100% / 6);
+    padding-left: 10px;
 }
 
 .album{
     width: 100%;
 }
+
+/* quinta sezione */
 
 /* footer */
 footer{
@@ -194,11 +204,21 @@ footer{
         width: 79%;
     }
 
+    .card {
+        width: calc(100% / 4);
+        padding-left: 10px;
+    }
+
 }
 
 @media all and (max-width: 700px){
     .fix{
         width: 68%;
+    }
+
+    .card {
+        width: calc(100% / 2);
+        padding-left: 10px;
     }
 }
 
