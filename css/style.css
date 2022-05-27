@@ -64,6 +64,11 @@ li{
     font-size: 13px;
 }
 
+.wi-20{
+    font-size: 30px;
+}
+
+
 .p-r-10{
     padding-right: 10px;
 }
@@ -126,7 +131,7 @@ main{
     width: 300px;
     height: 100%;
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 .logo{
@@ -135,6 +140,10 @@ main{
 
 .link{
     text-decoration: none;
+}
+
+.hov:hover{
+    color: white;
 }
 
 .h100{
@@ -183,8 +192,8 @@ main{
 }
 
 .h-150{
-    height: 131px;
-    min-height: 82px;
+    height: 46px;
+    min-height: 20px;
     width: 100%;
 }
 
@@ -224,12 +233,18 @@ main{
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1;
 }
 
 .btn-f{
     border-radius: 60px;
     border: 1px solid white;
     padding: 15px;
+    transition: 2s;
+}
+
+.btn-f:hover{
+    transform: scale(1.2);
 }
 
 .mar-r{
@@ -261,8 +276,41 @@ main{
     padding-left: 10px;
 }
 
+.pos-rel{
+    position: relative;
+}
+
+.pos-ab{
+    display: none;
+    position: absolute;
+    top: 30%;
+    left: 36%;
+}
+
+.card:hover .album{
+    opacity: 0.4;
+}
+
+.card:hover .artisti{
+    opacity: 0.4;
+}
+
+.card:hover{
+    cursor: pointer;
+}
+
+.card:hover .pos-ab{
+    display: inline-block;
+}
+
 .album{
     width: 100%;
+}
+
+.play1{
+    padding: 10px;
+    border: 6px solid white;
+    border-radius: 50%;
 }
 
 /* quinta sezione */
@@ -270,6 +318,7 @@ main{
     width: 100%;
     object-fit: cover;
     border-radius: 50%;
+    
 }
 
 /* footer */
@@ -337,6 +386,9 @@ footer{
     border-radius: 50%;
 }
 
+.bars{
+    position: relative;
+}
 
 .flex-audio{
     width:  30%;
@@ -344,6 +396,29 @@ footer{
     display: flex;
     align-items: center;
     justify-content: flex-end;
+}
+
+.d-i{
+    display: none;
+}
+
+.p-r{
+    background-color: rgb(68, 255, 68);
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+}
+
+.bars:hover .d-i{
+    display: inline-block;
+}
+
+.bars:hover .verde{
+    border-color: rgb(68, 255, 68);
+}
+
+.mano:hover{
+    cursor: pointer;
 }
 
 @media all and (max-width: 1100px){
