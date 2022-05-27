@@ -12,6 +12,10 @@ main{
     display: flex;
 }
 
+.d-none{
+    display: none;
+}
+
 .c-g{
     color: rgb(158, 158, 158);
 }
@@ -40,31 +44,72 @@ li{
     font-size: 20px;
 }
 
+.f-15{
+    font-size: 15px;
+}
+
+.bord-bott{
+    border-bottom: 1px solid rgb(158, 158, 158) ;
+}
+
 .t-c{
     text-align: center;
+}
+
+.f-10{
+    font-size: 10px;
 }
 
 .f-13{
     font-size: 13px;
 }
 
+.p-r-10{
+    padding-right: 10px;
+}
+
+.p-r-20{
+    padding-right: 20px;
+}
+
 .p-l-20{
     padding-left: 20px;
+}
+
+.widt{
+    width: 50vw;
+}
+
+.wid{
+    width: 100%;
 }
 
 .p-l-10{
     padding-left: 10px;
 }
+
 .d-inl{
     display: inline;
 }
 
-.b{
+.d-inl-b{
+    display: inline-block;
+}
+
+.d{
     display: block;
 }
 
 .marg-top-30{
     margin-top: 30px;
+}
+
+.marg-top-10{ 
+    margin-top: 10px;
+}
+
+.b-r{
+    border-radius: 50%;
 }
 
 /* main */
@@ -80,6 +125,8 @@ main{
 .ml{
     width: 300px;
     height: 100%;
+    position: relative;
+    z-index: 1;
 }
 
 .logo{
@@ -129,6 +176,19 @@ main{
     height: 50vh;
 }
 
+.download{
+    width: 15px;
+}
+
+.profilo{
+    width: 30px;
+}
+
+.pad-5{
+    padding: 5px;
+    background-color: rgb(158, 158, 158);
+}
+
 
 /* main destra */
 /* seconda sezione */
@@ -146,7 +206,8 @@ main{
     justify-content: end;
     padding: 20px;
     top: 0;
-    width: 82%;
+    left: 0;
+    width: 100%;
 }
 
 .btn-f{
@@ -189,6 +250,11 @@ main{
 }
 
 /* quinta sezione */
+.artisti{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
 
 /* footer */
 footer{
@@ -197,25 +263,94 @@ footer{
     height: 90px;
 }
 
+.foot-flex{
+    display: flex;
+    justify-content: space-between;
+}
 
+.sinister-flex{
+    display: flex;
+    align-items: center;
+    width: 30%;
+    height: 60px;
+}
+
+.brano-play{
+    width: 50px;
+}
+
+.barra{
+    display: inline-block;
+    width: 76%;
+    border:2px solid rgb(158, 158, 158) ;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.barra-c{
+    display: inline-block;
+    width: 20%;
+    border: 2px solid white;
+    border-radius: 20px 0px 0px 20px;
+
+}
+
+.barra-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:  40%;
+    height: 40px;
+    margin-right: 5px;
+}
+
+.carica-f{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.volume-f{
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+
+.play{
+    padding: 5px;
+    border: 4px solid white;
+    border-radius: 50%;
+}
+
+
+.flex-audio{
+    width:  30%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
 
 @media all and (max-width: 1100px){
-    .fix{
-        width: 79%;
-    }
-
     .card {
         width: calc(100% / 4);
         padding-left: 10px;
     }
 
+    .sinister-flex{
+        width:  250px;
+    }
+
+    .barra-flex{
+        width:  45%;
+    }
+
+    .flex-audio{
+    width:  250px;
+    }
+
 }
 
 @media all and (max-width: 700px){
-    .fix{
-        width: 68%;
-    }
-
     .card {
         width: calc(100% / 2);
         padding-left: 10px;
@@ -228,8 +363,19 @@ footer{
         height: 100%;
     }
 
-    .fix{
-        width: 90%;
+    .disp-none{
+        display: none;
     }
 
+    .d-none{
+        display: block;
+    }
+
+    .logo-small{
+        width: 35px;
+    }
+
+    .t-c-600{
+        text-align: center;
+    }
 }
